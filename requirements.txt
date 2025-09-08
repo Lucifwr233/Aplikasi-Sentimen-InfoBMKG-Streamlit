@@ -1,0 +1,11 @@
+# requirements.txt
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+nltk
+Sastrawi
+wordcloud
+matplotlib
+seaborn
