@@ -6,11 +6,11 @@
 Aplikasi web interaktif yang dibangun menggunakan Streamlit untuk menganalisis sentimen dari ulasan pengguna aplikasi "Info BMKG". Aplikasi ini membandingkan kinerja tiga model klasifikasi machine learning: **Naive Bayes**, **Support Vector Machine (SVM)**, dan **K-Nearest Neighbors (KNN)**.
 
 ### Demo Aplikasi
-![1](Assets/Screenshot1)
-![2](Assets/Screenshot2)
-![3](Assets/Screenshot3)
-![4](Assets/Screenshot4)
-![5](Assets/Screenshot5)
+![1](Assets/Screenshot1.png)
+![2](Assets/Screenshot2.png))
+![3](Assets/Screenshot3.png))
+![4](Assets/Screenshot4.png))
+![5](Assets/Screenshot5.png))
 
 ## Deskripsi
 
