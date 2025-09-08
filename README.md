@@ -64,7 +64,7 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal A
 
 2.  **Masuk ke Direktori Proyek**
     ```bash
-    cd NAMA_REPOSITORI_ANDA
+    Aplikasi-Sentimen-InfoBMKG-Streamlit
     ```
 
 3.  **Instal Semua Dependensi**
