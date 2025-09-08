@@ -7,10 +7,10 @@ Aplikasi web interaktif yang dibangun menggunakan Streamlit untuk menganalisis s
 
 ### Demo Aplikasi
 ![1](Assets/Screenshot1.png)
-![2](Assets/Screenshot2.png))
-![3](Assets/Screenshot3.png))
-![4](Assets/Screenshot4.png))
-![5](Assets/Screenshot5.png))
+![2](Assets/Screenshot2.png)
+![3](Assets/Screenshot3.png)
+![4](Assets/Screenshot4.png)
+![5](Assets/Screenshot5.png)
 
 ## Deskripsi
 
