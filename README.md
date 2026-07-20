@@ -1,96 +1,87 @@
-# Analisis Sentimen Ulasan Aplikasi Info BMKG
+# Info BMKG App Review Sentiment Analysis
 
 ![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-Aplikasi web interaktif yang dibangun menggunakan Streamlit untuk menganalisis sentimen dari ulasan pengguna aplikasi "Info BMKG". Aplikasi ini membandingkan kinerja tiga model klasifikasi machine learning: **Naive Bayes**, **Support Vector Machine (SVM)**, dan **K-Nearest Neighbors (KNN)**.
+An interactive web application built using Streamlit to analyze user review sentiments for the "Info BMKG" mobile application. This app compares the performance of three machine learning classification models: **Naive Bayes**, **Support Vector Machine (SVM)**, and **K-Nearest Neighbors (KNN)**.
 
-### Demo Aplikasi
+### App Demo
 ![1](Assets/Screenshot1.png)
 ![2](Assets/Screenshot2.png)
 ![3](Assets/Screenshot3.png)
 ![4](Assets/Screenshot4.png)
 ![5](Assets/Screenshot5.png)
 
+## Description
 
-## Deskripsi
+This project aims to classify sentiment (positive, negative, or neutral) from text reviews provided by users of the Info BMKG app on the Google Play Store. Utilizing pre-trained models, this application provides a platform to:
+1. Perform real-time sentiment prediction on new, custom text.
+2. Evaluate and compare the performance of three popular classification models side-by-side.
+3. Provide informative data visualizations for deeper analysis.
 
-Proyek ini bertujuan untuk mengklasifikasikan sentimen (positif, negatif, atau netral) dari ulasan teks yang diberikan oleh pengguna aplikasi Info BMKG di Google Play Store. Dengan menggunakan model yang telah dilatih sebelumnya, aplikasi ini menyediakan platform untuk:
-1.  Melakukan prediksi sentimen secara real-time pada teks baru.
-2.  Mengevaluasi dan membandingkan performa dari tiga model klasifikasi populer.
-3.  Menyediakan visualisasi data yang informatif untuk analisis lebih mendalam.
+## Key Features
 
-## Fitur-Fitur Utama
+- **Real-Time Sentiment Prediction**: Enter any review text and get instant sentiment predictions from all three models simultaneously.
+- **Model Comparison**: View and compare results from Naive Bayes, SVM, and KNN side-by-side.
+- **Dataset Viewer**: Load and inspect the original dataset used in this project.
+- **Visualization & Evaluation Dashboard**:
+  - **Sentiment Distribution**: Bar charts comparing the distribution of sentiments (positive, negative, neutral) between the original ground-truth labels and each model's predictions.
+  - **Word Cloud**: Visualizations of the most frequently occurring words for each sentiment category.
+  - **Performance Metrics**: A summary table of model performance metrics including **Accuracy, Precision, Recall, and F1-Score**.
+  - **Confusion Matrix**: Visualized confusion matrices for each model to inspect detailed classification performance.
+  - **ROC Curve (AUC)**: ROC curve graphs to evaluate the models' discrimination capabilities.
 
--   **Prediksi Sentimen Real-Time**: Masukkan teks ulasan apapun dan dapatkan hasil prediksi sentimen dari tiga model secara bersamaan.
--   **Perbandingan Model**: Lihat dan bandingkan hasil dari Naive Bayes, SVM, dan KNN secara berdampingan.
--   **Tampilan Dataset**: Muat dan tampilkan dataset asli yang digunakan dalam proyek ini.
--   **Dasbor Visualisasi & Evaluasi**:
-    -   **Distribusi Sentimen**: Diagram batang yang membandingkan distribusi sentimen (positif, negatif, netral) antara label data asli dengan hasil prediksi setiap model.
-    -   **Word Cloud**: Visualisasi kata-kata yang paling sering muncul untuk setiap kategori sentimen.
-    -   **Metrik Performa**: Tabel ringkasan performa model yang mencakup **Akurasi, Presisi, Recall, dan F1-Score**.
-    -   **Confusion Matrix**: Visualisasi matriks konfusi untuk setiap model guna melihat performa klasifikasi secara detail.
-    -   **Kurva ROC (AUC)**: Grafik kurva ROC untuk mengevaluasi kemampuan diskriminasi model.
-
-## Struktur Proyek
+## Project Structure
 ```
 sentiment_analysis_app/
-├── streamlit_app.py              # Kode utama aplikasi
+├── streamlit_app.py              # Main application code
 ├── Model/
 │   ├── naive_bayes_custom_model.pkl
 │   ├── svm_custom_model_multi.json
 │   └── knn_model.pkl
 ├── Dataset/
-│   ├── 1 Dataset Asli.csv
-│   └── 6 hasil_gabungan_prediksi.csv
-├── requirements.txt              # Daftar library yang dibutuhkan
-└── README.md                     # File ini
+│   ├── 1 Dataset Asli.csv        # Original Dataset
+│   └── 6 hasil_gabungan_prediksi.csv  # Combined Prediction Results
+├── requirements.txt              # Required libraries list
+└── README.md                     # This file
 ```
 
-## Instalasi dan Cara Menjalankan
+## Installation and Setup
 
-Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal Anda.
+Follow these steps to set up and run this application on your local machine.
 
+### Prerequisites
+- Python 3.8 or newer
+- pip (Python Package Installer)
 
-### Prasyarat
--   Python 3.8 atau versi yang lebih baru
--   pip (Package Installer for Python)
+### Installation Steps
 
+1. **Clone the Repository**
+   Open your terminal or command prompt and clone this repository:
+   ```bash
+   git clone https://github.com/Lucifwr233/Aplikasi-Sentimen-InfoBMKG-Streamlit.git
+   ```
 
-### Langkah-langkah Instalasi
+2. **Navigate to the Project Directory**
+   ```bash
+   cd Aplikasi-Sentimen-InfoBMKG-Streamlit
+   ```
 
-1.  **Clone Repositori**
-    Buka terminal atau command prompt dan clone repositori ini:
-    ```bash
-    git clone [https://github.com/Lucifwr233/Aplikasi-Sentimen-InfoBMKG-Streamlit.git](https://github.com/Lucifwr233/Aplikasi-Sentimen-InfoBMKG-Streamlit.git)
-    ```
+3. **Install Dependencies**
+   Install all the required libraries using the `requirements.txt` file:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+4. **Run the Streamlit App**
+   Once the installation is complete, launch the application with the following command:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+   The application will automatically open in your default web browser.
 
-2.  **Masuk ke Direktori Proyek**
-    ```bash
-    cd/Aplikasi-Sentimen-InfoBMKG-Streamlit
-    ```
-    
+## Models Used
 
-3.  **Instal Semua Dependensi**
-    Instal semua library yang dibutuhkan dari file `requirements.txt`:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-
-4.  **Jalankan Aplikasi Streamlit**
-    Setelah semua instalasi selesai, jalankan perintah berikut:
-    ```bash
-    streamlit run streamlit_app.py
-    ```
-    Aplikasi akan otomatis terbuka di browser Anda.
-
-
-
-## Model yang Digunakan
-
--   **Naive Bayes**: Sebuah algoritma klasifikasi probabilistik berdasarkan Teorema Bayes. Model ini cepat, sederhana, dan bekerja dengan baik pada klasifikasi teks.
--   **Support Vector Machine (SVM)**: Model yang bertujuan untuk menemukan *hyperplane* terbaik yang memisahkan data ke dalam kelas-kelas yang berbeda. Efektif dalam ruang berdimensi tinggi.
--   **K-Nearest Neighbors (KNN)**: Algoritma *instance-based learning* yang mengklasifikasikan data baru berdasarkan mayoritas kelas dari 'k' tetangga terdekatnya.
-
+- **Naive Bayes**: A probabilistic classification algorithm based on Bayes' Theorem. It is fast, simple, and performs remarkably well for text classification tasks.
+- **Support Vector Machine (SVM)**: A model that finds the optimal *hyperplane* to separate data into distinct classes. It is highly effective in high-dimensional spaces.
+- **K-Nearest Neighbors (KNN)**: An *instance-based learning* algorithm that classifies a new data point based on the majority class of its 'k' nearest neighbors.
