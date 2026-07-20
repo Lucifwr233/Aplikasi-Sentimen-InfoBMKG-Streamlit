@@ -82,6 +82,7 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal A
     ```
     Aplikasi akan otomatis terbuka di browser Anda.
 
+
 ## Model yang Digunakan
 
 -   **Naive Bayes**: Sebuah algoritma klasifikasi probabilistik berdasarkan Teorema Bayes. Model ini cepat, sederhana, dan bekerja dengan baik pada klasifikasi teks.
