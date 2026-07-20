@@ -55,6 +55,7 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal A
 -   Python 3.8 atau versi yang lebih baru
 -   pip (Package Installer for Python)
 
+
 ### Langkah-langkah Instalasi
 
 1.  **Clone Repositori**
