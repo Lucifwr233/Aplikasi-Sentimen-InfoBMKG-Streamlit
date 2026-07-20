@@ -51,6 +51,7 @@ sentiment_analysis_app/
 
 Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal Anda.
 
+
 ### Prasyarat
 -   Python 3.8 atau versi yang lebih baru
 -   pip (Package Installer for Python)
@@ -64,10 +65,12 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal A
     git clone [https://github.com/Lucifwr233/Aplikasi-Sentimen-InfoBMKG-Streamlit.git](https://github.com/Lucifwr233/Aplikasi-Sentimen-InfoBMKG-Streamlit.git)
     ```
 
+
 2.  **Masuk ke Direktori Proyek**
     ```bash
     cd/Aplikasi-Sentimen-InfoBMKG-Streamlit
     ```
+    
 
 3.  **Instal Semua Dependensi**
     Instal semua library yang dibutuhkan dari file `requirements.txt`:
@@ -75,12 +78,14 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal A
     pip install -r requirements.txt
     ```
 
+
 4.  **Jalankan Aplikasi Streamlit**
     Setelah semua instalasi selesai, jalankan perintah berikut:
     ```bash
     streamlit run streamlit_app.py
     ```
     Aplikasi akan otomatis terbuka di browser Anda.
+
 
 
 ## Model yang Digunakan
